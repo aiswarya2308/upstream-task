@@ -1,0 +1,692 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    width: 100%;
+    display: inline-block;
+    padding: 10px 40px;
+}
+nav img{
+    width: 150px;
+}
+.nav-right{
+    display: flex;
+    float: right;
+    margin-top: 5px;
+}
+.nav-right .fa{
+    border-radius: 50%;
+    background-color: rgb(180, 140, 133);
+    padding: 12px;
+    margin: 2px;
+    color: #fff;
+    cursor: pointer;
+}
+#mainbox{
+    margin: 5px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all .6s;
+}
+.sidemenu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80%;
+    width: 0;
+    background-color: #fff;
+    z-index: 1;
+    padding-top: 80px;
+    overflow-x: hidden;
+    transition: all .5s;
+}
+.sidemenu a{
+    padding: 15px 8px 15px 64px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    display: block;
+}
+.sidemenu a:hover{
+    color: rgb(180, 140, 133);
+}
+.sidemenu .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 32px;
+}
+.banner-showcase{
+    background-color: #bbbc;
+    height: 88.9vh;
+    text-align: center;
+    position: relative;
+    width: auto;
+}
+.banner-showcase h1{
+    position: absolute;
+    top: 35%;
+    left: 23%;
+}
+.banner-showcase h3{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    text-transform: uppercase;
+}
+.banner-showcase .global-transition{
+    position: absolute;
+    top: 52%;
+    left: 35%;
+    padding: 18px;
+    background: rgb(180, 140, 133);
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 13px;
+    width: 190px;
+}
+.banner-showcase .global-transition:hover{
+    background: #fff;
+    color:rgb(180, 140, 133);
+}
+.banner-showcase .explore{
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    padding: 18px;
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 13px;
+    width: 170px;
+    text-align: left;
+}
+.banner-showcase .explore:hover{
+    background: rgb(180, 140, 133);
+    color: #fff;
+}
+.pharma-marketer-banner{
+    height: 550px;
+    background-color: #bbbc;
+    background-image: linear-gradient(to left, rgba(168, 200, 247, 0.8), #bbbc);
+    position: relative;
+}
+.pharma-marketer-content{
+    width: 50%;
+    padding: 10px 50px;
+}
+.pharma-marketer-content h1{
+    position: absolute;
+    top: 40%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.pharma-marketer-content h2{
+    position: absolute;
+    top: 48%;
+    color: #fff;
+    font-weight: 500;
+}
+.pharma-marketer-content a{
+    position: absolute;
+    top: 58%;
+    padding: 18px;
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.company{
+    margin-top: 40px;
+    background: #fff;
+}
+.company h3{
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.company h4{
+    text-align: center;
+    color: rgb(180, 140, 133);
+    font-style: italic;
+}
+.company ul li{
+   width: 48%;
+   float: left;
+   list-style: none;
+   padding: 20px;
+   display: flex;
+}
+.company ul li span{
+    margin: 10px;   
+    padding: 0 0 0 50px;
+}
+.company ul li i{
+    border-radius: 50%;
+    background: rgb(180, 140, 133);
+    padding: 30px;
+    color: #fff;
+    margin-top: 20px;
+}
+.company ul li span h5{
+    padding: 20px 0;
+    font-size: 20px;
+}
+.company ul li span p{
+    text-align: left;
+}
+.heading-right{
+    text-align: right;
+    margin-right: 30px;
+}
+.heading-left{
+    text-align: left;
+}
+.banner-background{
+    background-image: url('scenary.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    margin-top: 700px;
+    color: #fff;
+    text-align: center;
+}
+.banner-slider{
+    padding-top: 100px;
+}
+.banner-slider h2{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 500;
+}
+.account-info{
+    margin: 80px 0;
+}
+.account-info i{
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background: transparent;
+    padding: 30px 30px 0 30px;
+    margin-bottom: 40px;
+}
+.account-info p{
+    text-align: center;
+    padding: 0 100px;
+    margin-bottom: 30px;
+}
+.account-info span{
+    font-style: italic;
+}
+.events{
+    margin: 100px;
+}
+.pharma-event{
+    display: flex;
+    margin: 20px;
+}
+.events h2{
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 30px 0;
+    font-weight: 600;
+}
+.card{
+    background: rgb(180, 140, 133);
+    width: 280px;
+    height: 180px;
+}
+.card-content{
+    padding: 0 30px;
+}
+.card-content h5{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.card-content span{
+    display: block;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: rgba(87, 84, 84, 0.8);
+    font-weight: 500;
+}
+.card-content span:nth-child(3){
+    color: rgb(180, 140, 133);
+}
+.card-content span i{
+    color: #000;
+    padding: 0 10px;
+    font-size: 18px;
+}
+.readmore{
+    margin: 20px 0;
+}
+.card-content a{
+    padding: 10px 15px;
+    color: #fff;
+    background-color: rgb(180, 140, 133);
+    text-decoration: none;
+}
+.blogs{
+    display: flex;
+}
+.cards{
+    margin: 20px;
+}
+.recent-section{
+    background-color: #dddfdd;
+    padding-bottom: 2px;
+}
+.recent-blog{
+    margin: 150px 100px;
+}
+.recent-blog h2{
+    text-align: center;
+    padding: 80px 20px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.recent-blog h4{
+    text-align: center;
+    font-style: italic;
+    color: rgb(180, 140, 133);
+    margin-bottom: 40px;
+}
+.box{
+    background-color: rgb(180, 140, 133);
+    width: 350px;
+    height: 180px;
+}
+.press-release{
+    display: flex;
+}
+.press-release-date{
+    width: 100px;
+    height: 280px;
+    padding: 10px;
+    color: rgb(180, 140, 133);
+    text-align: center;
+    background-color: rgba(224, 188, 183, 0.815);
+}
+.press-release-date span{
+    font-size: 35px;
+}
+.press-release span{
+    width: 250px;
+    padding: 20px;  
+}
+.press-release span h6{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.press-release-content{
+    background: #fff;
+}
+.press-release-content p{
+    color: #aaa;
+    font-size: 14px;
+}
+.news-letter{
+    background: #000;
+}
+.news-letter h2{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 80px 0 10px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.subscribe-box {
+    padding: 20px 0;
+}
+.subscribe-box .sub-box {
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+}
+.sub-box input {
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-right: none;
+    padding: 15px 20px;
+    color: #000;
+}
+.sub-box input::placeholder{
+    font-weight: 700;
+    color: #000;
+}
+.sub-box button {
+    background-color: rgb(180, 140, 133);
+    color: #fff;
+    border: 4px solid rgb(180, 140, 133);
+    padding: 5px 25px;
+    margin: 0;
+}
+.footer ul{
+    color: #fff;
+    padding: 20px 0 80px;
+    text-align: center;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 10px 30px;    
+}
+
+
+@media only screen and (max-width: 1024px){
+    #mainbox {
+        font-size: 20px;
+    }
+    .nav-right .fa {
+        padding: 10px;
+    }
+    nav img {
+        width: 100px;
+    }
+    .banner-showcase h1 {
+        left: 12%;
+    }
+    .banner-showcase h3 {
+        left: 23%;
+    }
+    .banner-showcase .global-transition {
+        left: 28%;
+    }
+    .banner-showcase .explore {
+        left: 48%;
+    }
+    .company ul li {
+        width: 45%;
+    }
+    .company ul li span h5 {
+        font-size: 16px;
+    }
+    .company ul li span p{
+        font-size: 12px;
+    }
+    .company ul li span {
+        padding: 0 0 0 20px;
+    }
+    .fa-4x {
+        font-size: 2.6em;
+    }
+    .fa-5x {
+        font-size: 3em;
+    }
+    .account-info p {
+        padding: 0 40px;
+    }
+    .card-content h5 {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .card-content span {
+        padding-bottom: 7px;
+    }
+    .press-release-content p {
+        font-size: 12px;
+    }
+    .card-content a{
+        font-size: 12px;
+    }
+    .card-content span {
+        font-size: 10px;
+    }
+    .recent-blog {
+        margin: 150px 50px;
+    }
+    .cards {
+        margin: 10px;
+    }
+    .box {
+        width: 290px;
+    }
+    .card {
+        width: 230px;
+        height: 150px;
+    }
+    .press-release-date {
+        width: 90px;
+    }
+    .press-release span {
+        width: 200px;
+    }
+    .footer ul li {
+        padding: 10px 20px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .banner-showcase h1 {
+        left: 8%;
+        font-size: 25px;
+    }
+    .banner-showcase h3 {
+        left: 12%;
+        font-size: 18px;
+    }
+    .banner-showcase .global-transition {
+        left: 23%;
+    }
+    .banner-showcase .explore {
+        left: 49%;
+    }
+    .pharma-marketer-content h1 {
+       font-size: 20px;
+    }
+    .pharma-marketer-content h2 {
+        font-size: 18px;
+    }
+    .pharma-marketer-content a{
+        font-size: 12px;
+    }
+    .company ul li span h5 {
+        font-size: 10px;
+    }
+    .company ul li span p {
+        font-size: 8px;
+    }
+    .fa-4x {
+        font-size: 2em;
+    }
+    .fa-5x {
+        font-size: 2em;
+    }
+    .company ul li span {
+        padding: 0 0 0 20px;
+    }
+    .account-info p {
+        padding: 0 40px;
+        font-size: 10px;
+    }
+    .card {
+        width: 150px;
+        height: 150px;
+    }
+    .card-content a {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+    .card-content h5 {
+        font-size: 10px;
+    }
+    .card-content span {
+        font-size: 8px;
+        padding-bottom: 6px;
+    }
+    .blogs {
+        display: block;
+    }
+    .cards {
+        margin: 20px 100px;
+    }
+    .footer ul li{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 480px){
+    nav {
+        padding: 10px 20px;
+    }
+    nav img {
+        width: 80px;
+    }
+    #mainbox {
+        margin: 5px 10px;
+        font-size: 15px;
+    }
+    .banner-showcase h1 {
+        left: 12%;
+        font-size: 11px;
+    }
+    .banner-showcase .global-transition {
+        padding: 5px;
+        font-size: 8px;
+        width: 100px;
+    }
+    .banner-showcase .explore {
+        padding: 5px;
+        font-size: 8px;
+        width: 100px;
+        left: 51%;
+    }
+    .pharma-marketer-content {
+        padding: 10px 30px;
+    }
+    .pharma-marketer-content h1 {
+        font-size: 13px;
+    }
+    .pharma-marketer-content h2 {
+        font-size: 12px;
+    }
+    .banner-showcase h3 {
+        left: 17%;
+        font-size: 8px;
+    }
+    .banner-background{
+        margin-top: 1100px;
+    }
+    .pharma-marketer-content a {
+        padding: 12px;
+    }
+    .company ul li {
+        margin: 10px 30px;
+    }
+    .nav-right .fa {
+        padding: 8px;
+        margin: 1px;
+    }
+    .company ul{
+        margin-bottom: 80px;
+    }
+    .company ul li {
+        display: flex;
+        padding: 10px;
+        margin: 10px;
+        width: 70%;
+    }
+    .heading-right {
+        text-align: left;
+    }
+    .company ul li i{
+        padding: 30px 20px 0 20px;
+    }
+    .fa-4x {
+        margin-top: 10px;
+        font-size: 1.5em;
+    }
+    .fa-5x {
+        margin-top: 10px;
+        font-size: 1.5em;
+    }
+    .banner-slider {
+        padding-top: 80px!important;
+    }
+    .cards {
+        margin: 20px 10px;
+    }
+    .box {
+        width: 250px;
+        height: 150px;
+    }
+    .press-release-date {
+        width: 100px;
+    }
+    .press-release span {
+        width: 150px;
+        padding: 10px;
+    }
+    .press-release{
+        width: 250px;
+    }
+    .press-release span h6 {
+        font-size: 13px;
+    }
+    .press-release-content p {
+        font-size: 12px;
+    }
+    .account-info p {
+        padding: 0 10px;
+        font-size: 10px;
+        height: 80px;
+    }
+    .account-info span {
+        font-size: 9px;
+    }
+    .card {
+        width: 100px;
+        height: 130px;
+    }
+    .events {
+        margin: 10px;
+    }
+    .card-content h5 {
+        font-size: 5px;
+    }
+    .card-content span {
+        font-size: 5px;
+        padding-bottom: 5px;
+    }
+    .pharma-event {
+        margin: 10px;
+    }
+    .card-content a {
+        padding: 5px;
+        font-size: 8px;
+    }
+    .readmore {
+        margin: 10px 0;
+    }
+    .recent-blog {
+        margin: 150px 50px;
+    }
+    .sub-box input {
+        width: 200px;
+    }
+    .footer ul li {
+        font-size: 15px;
+        padding: 10px 50px;
+    }
+    .footer ul span{
+        display: none;
+    }
+    .sidemenu {
+        height: 90%;
+    }
+}
